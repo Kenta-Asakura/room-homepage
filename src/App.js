@@ -1,3 +1,8 @@
+import React from "react";
+import styled from "styled-components";
+import content from "./Content";
+import GlobalStyles from "./components/styles/Global";
+
 const theme = {
   colors: {
     'Dark Gray': '0, 0%, 63%',
