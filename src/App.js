@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import content from "./Content";
+import content from "./components/Showcase";
 import GlobalStyles from "./components/styles/Global";
+import Header from "./components/styles/Header";
 
 const theme = {
   colors: {
@@ -21,6 +22,7 @@ const theme = {
 function App() {
   return (
     <div className="App">
+      <Header />
       <GlobalStyles />
       Hello World
     </div>
