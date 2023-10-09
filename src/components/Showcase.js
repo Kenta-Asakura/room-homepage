@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import arrow from '../images/icon-arrow.svg'
+import { PictureContainer, DesktopImageSource, Image, Contents, ContentsH1, ContentsP, ShopButton } from './styles/Showcase.styled'
+// import { Container } from './styles/Container.styled'
 
-const contents = [
+const data = [
   {
     id: 1,
     title: 'Discover innovative ways to decorate',
@@ -26,24 +28,25 @@ const contents = [
 ]
 
 export default function Showcase() {
-  const [items] = useState(contents)
+  const [items] = useState(data)
+
   return (
     <>
       <section>
         {items.map((item, index) => (
           <article key={item.id}>
             <div>
-              <picture>
-                <source media='(min-width: 768px)' srcSet={item.desktop} />
-                <img src={item.mobile} alt={item.title} />
-              </picture>
+              <PictureContainer>
+                <DesktopImageSource media='(min-width: 768px)' srcSet={item.desktop} />
+                <Image src={item.mobile} alt={item.title} />
+              </PictureContainer>
             </div>
 
-            <div>
-              <h1>{item.title}</h1>
-              <p>{item.description}</p>
-              <button>Shop Now <img src={arrow} alt='' /></button>
-            </div>
+            <Contents>
+              <ContentsH1>{item.title}</ContentsH1>
+              <ContentsP>{item.description}</ContentsP>
+              <ShopButton>SHOP NOW <img src={arrow} alt='' /></ShopButton>
+            </Contents>
           </article>
         ))}
       </section>

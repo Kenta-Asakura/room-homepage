@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 export default function Header() {
   return (
     <div>
@@ -11,9 +9,9 @@ export default function Header() {
         <nav></nav>
 
         <div>
-          <button>
+          <div>
             <img src='' alt='' />
-          </button>
+          </div>
         </div>
       </header>
     </div>
