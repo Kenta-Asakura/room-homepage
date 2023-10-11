@@ -1,17 +1,56 @@
 import styled from "styled-components";
 
+export const SectionContainer = styled.section`
+
+`;
+
+export const SlidesContainer = styled.div`
+  position: relative;
+`
+export const ArticleContainer = styled.article`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+`;
+
 export const PictureContainer = styled.picture`
-width: 100%;
+  width: 100%;
 `;
 
 export const DesktopImageSource = styled.source`
-object-fit: cover;
-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%
 `;
 
 export const Image = styled.img`
-object-fit: cover;
+  object-fit: cover;
   width: 100%;
+  height: 100%
+`;
+
+export const ArrowsList = styled.ul`
+  display: flex;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+`;
+
+export const ArrowButton= styled.button`
+  background-color: black;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const ArrowsImg = styled.img`
+  padding: 20px;
 `;
 
 export const Contents = styled.div`

@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import arrow from '../images/icon-arrow.svg'
-import { PictureContainer, DesktopImageSource, Image, Contents, ContentsH1, ContentsP, ShopButton } from './styles/Showcase.styled'
+import left from '../images/icon-angle-left.svg'
+import right from '../images/icon-angle-right.svg'
+import { ArticleContainer, SlidesContainer, PictureContainer, DesktopImageSource, Image, ArrowButton, ArrowsList, ArrowsImg, Contents, ContentsH1, ContentsP, ShopButton } from './styles/Showcase.styled'
 // import { Container } from './styles/Container.styled'
 
 const data = [
@@ -34,20 +36,33 @@ export default function Showcase() {
     <>
       <section>
         {items.map((item, index) => (
-          <article key={item.id}>
-            <div>
+          <ArticleContainer key={item.id}>
+            <SlidesContainer>
               <PictureContainer>
                 <DesktopImageSource media='(min-width: 768px)' srcSet={item.desktop} />
                 <Image src={item.mobile} alt={item.title} />
               </PictureContainer>
-            </div>
+
+              <ArrowsList>
+                <li>
+                  <ArrowButton>
+                    <ArrowsImg src={left} alt=''></ArrowsImg>
+                  </ArrowButton>
+                </li>
+                <li>
+                  <ArrowButton>
+                    <ArrowsImg src={right} alt=''></ArrowsImg>
+                  </ArrowButton>
+                </li>
+              </ArrowsList>
+            </SlidesContainer>
 
             <Contents>
               <ContentsH1>{item.title}</ContentsH1>
               <ContentsP>{item.description}</ContentsP>
               <ShopButton>SHOP NOW <img src={arrow} alt='' /></ShopButton>
             </Contents>
-          </article>
+          </ArticleContainer>
         ))}
       </section>
     </>
