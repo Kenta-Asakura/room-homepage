@@ -5,5 +5,8 @@
   gap: 16px;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  
+  opacity: 0.71;
+  background-color: neutral;
+  background-color: rgba(93, 92, 92, 0.835);
+  transition: all ea;
 }

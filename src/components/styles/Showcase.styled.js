@@ -9,6 +9,7 @@ export const SlidesContainer = styled.div`
 `
 export const ArticleContainer = styled.article`
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -36,21 +37,23 @@ export const ArrowsList = styled.ul`
   display: flex;
   list-style: none;
   position: absolute;
-  bottom: 0;
+  bottom: -12px;
   right: 0;
 `;
 
 export const ArrowButton= styled.button`
   background-color: black;
   border: none;
+  transition: 0.2s;
 
   &:hover {
     cursor: pointer;
+    background-color: rgb(64 64 64);
   }
 `;
 
 export const ArrowsImg = styled.img`
-  padding: 20px;
+  padding: 16px;
 `;
 
 export const Contents = styled.div`
