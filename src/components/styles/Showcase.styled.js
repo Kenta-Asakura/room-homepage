@@ -37,7 +37,7 @@ export const ArrowsList = styled.ul`
   display: flex;
   list-style: none;
   position: absolute;
-  bottom: -12px;
+  bottom: -9px;
   right: 0;
 `;
 
