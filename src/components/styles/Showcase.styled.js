@@ -9,8 +9,7 @@ export const SlidesContainer = styled.div`
 `
 export const ArticleContainer = styled.article`
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns:repeat(2, minmax(0, 1fr));
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -58,6 +57,7 @@ export const ArrowsImg = styled.img`
 
 export const Contents = styled.div`
   padding: 48px;
+  align-items: center;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     padding: 32px;
