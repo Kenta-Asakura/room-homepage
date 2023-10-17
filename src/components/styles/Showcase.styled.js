@@ -57,7 +57,8 @@ export const ArrowsImg = styled.img`
 
 export const Contents = styled.div`
   padding: 48px;
-  align-items: center;
+  display: grid;
+  align-content: center;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     padding: 32px;
