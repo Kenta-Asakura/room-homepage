@@ -36,7 +36,7 @@ export const ArrowsList = styled.ul`
   display: flex;
   list-style: none;
   position: absolute;
-  bottom: -9px;
+  bottom: -12px;
   right: 0;
 `;
 
@@ -90,7 +90,7 @@ export const ShopButton = styled.button`
   background: none;
   cursor: pointer;
   letter-spacing: 0.7rem;
-  font-weight: ${({ theme }) => theme.fonts.light};
+  font-weight: ${({ theme }) => theme.fonts.medium};
 
   &:hover {
     opacity: 75%;

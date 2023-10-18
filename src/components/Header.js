@@ -1,19 +1,23 @@
+import { HeaderContainer } from "./styles/Header.styled";
+import logo from "../images/logo.svg"
+import menu from "../images/icon-hamburger.svg"
+
 export default function Header() {
   return (
-    <div>
-      <header>
+    <>
+      <HeaderContainer>
         <div>
-          <img src='' alt='' />
+          <img src={logo} alt='' />
         </div>
 
         <nav></nav>
 
         <div>
-          <div>
-            <img src='' alt='' />
-          </div>
+          <button>
+            <img src={menu} alt='' />
+          </button>
         </div>
-      </header>
-    </div>
+      </HeaderContainer>
+    </>
   );
 }
