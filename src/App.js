@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/Global";
 import Header from "./components/Header";
 import Showcase from "./components/Showcase";
+import SectionTwo from "./components/SectionTwo";
 
 const theme = {
   colors: {
@@ -29,6 +30,7 @@ function App() {
         <GlobalStyles />
         <Header />
         <Showcase />
+        <SectionTwo />
       </>
     </ThemeProvider>
   );
