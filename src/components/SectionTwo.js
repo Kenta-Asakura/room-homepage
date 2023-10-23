@@ -1,17 +1,17 @@
 import React from "react";
 import aboutDark from "../images/image-about-dark.jpg";
 import aboutLight from "../images/image-about-light.jpg";
-import { SectionTwoContainer } from "./styles/SectionTwo.styled";
+import { ArticleImg, SectionTwoContainer, SectionTwoContents } from "./styles/SectionTwo.styled";
 
 export default function SectionTwo() {
   return (
     <>
       <SectionTwoContainer>
-        <article>
+        <ArticleImg>
           <img src={aboutDark} alt="" />
-        </article>
+        </ArticleImg>
 
-        <article>
+        <SectionTwoContents>
           <h2>About our furniture</h2>
           <p>
             Our multifunctional collection blends design and function to suit
@@ -21,11 +21,11 @@ export default function SectionTwo() {
             styles or anything in between. Product specialists are available to
             help you create your dream space.
           </p>
-        </article>
+        </SectionTwoContents>
 
-        <article>
+        <ArticleImg>
           <img src={aboutLight} alt="" />
-        </article>
+        </ArticleImg>
       </SectionTwoContainer>
     </>
   );

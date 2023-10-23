@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
-export const SectionContainer = styled.section`
-
-`;
+export const SectionContainer = styled.section``;
 
 export const SlidesContainer = styled.div`
   position: relative;
-`
+`;
 export const ArticleContainer = styled.article`
   display: grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -23,13 +21,13 @@ export const PictureContainer = styled.picture`
 export const DesktopImageSource = styled.source`
   object-fit: cover;
   width: 100%;
-  height: 100%
+  height: 100%;
 `;
 
 export const Image = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 100%
+  height: 100%;
 `;
 
 export const ArrowsList = styled.ul`
@@ -40,7 +38,7 @@ export const ArrowsList = styled.ul`
   right: 0;
 `;
 
-export const ArrowButton= styled.button`
+export const ArrowButton = styled.button`
   background-color: black;
   border: none;
   transition: 0.2s;
@@ -67,7 +65,7 @@ export const Contents = styled.div`
 
 export const ContentsH1 = styled.h1`
   font-size: 30px;
-  color: ${({ theme }) => theme.colors['Slate']};
+  color: ${({ theme }) => theme.colors["Slate"]};
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 21px;
@@ -77,7 +75,7 @@ export const ContentsH1 = styled.h1`
 export const ContentsP = styled.p`
   opacity: 75%;
   margin: 24px 0;
-  color: ${({ theme }) => theme.colors['Slate']};
+  color: ${({ theme }) => theme.colors["Slate"]};
 `;
 
 export const ShopButton = styled.button`
