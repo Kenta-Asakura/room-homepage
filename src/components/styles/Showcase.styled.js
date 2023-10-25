@@ -73,6 +73,7 @@ export const ContentsH1 = styled.h1`
 `;
 
 export const ContentsP = styled.p`
+  line-height: 1.2;
   opacity: 75%;
   margin: 24px 0;
   color: ${({ theme }) => theme.colors["Slate"]};

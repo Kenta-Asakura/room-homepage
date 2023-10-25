@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionTwoContainer = styled.div`
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -9,9 +9,10 @@ export const SectionTwoContainer = styled.div`
   }
 
   h2 {
-    font-weight: ${({ theme }) => theme.fonts.medium};
     font-size: 30px;
+    line-height: 36px;
     text-transform: uppercase;
+    font-weight: ${({ theme }) => theme.fonts.medium};
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 24px;
@@ -19,8 +20,9 @@ export const SectionTwoContainer = styled.div`
   }
 
   p {
-    color: ${({ theme }) => theme.colors['Slate']};
+    color: ${({ theme }) => theme.colors["Slate"]};
     opacity: 75%;
+    line-height: 1.2;
   }
 `;
 
@@ -32,5 +34,8 @@ export const ArticleImg = styled.article`
 `;
 
 export const SectionTwoContents = styled.article`
-  padding: 24px;
-`
+  padding: 32px;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding 48px
+  };
+`;
