@@ -2,20 +2,7 @@ import React, { useState } from "react";
 import arrow from "../images/icon-arrow.svg";
 import left from "../images/icon-angle-left.svg";
 import right from "../images/icon-angle-right.svg";
-import {
-  ArticleContainer,
-  SlidesContainer,
-  PictureContainer,
-  DesktopImageSource,
-  Image,
-  ArrowButton,
-  ArrowsList,
-  ArrowsImg,
-  Contents,
-  ContentsH1,
-  ContentsP,
-  ShopButton,
-} from "./styles/Showcase.styled";
+import { ArticleContainer, SlidesContainer, PictureContainer, DesktopImageSource, Image, ArrowButton, ArrowsList, ArrowsImg, Contents, ContentsH1, ContentsP, ShopButton} from "./styles/Showcase.styled";
 // import { Container } from './styles/Container.styled'
 
 const data = [
@@ -69,7 +56,7 @@ export default function Showcase() {
     <>
       <section>
         {items.map((item, index) => (
-          <ArticleContainer key={item.id} className={slideIndex === index}>
+          <ArticleContainer key={item.id} index={index} slideIndex={slideIndex}>
             <SlidesContainer>
               <PictureContainer>
                 <DesktopImageSource

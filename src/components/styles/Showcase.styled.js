@@ -6,7 +6,7 @@ export const SlidesContainer = styled.div`
   position: relative;
 `;
 export const ArticleContainer = styled.article`
-  display: grid;
+  display: ${({ index, slideIndex }) => index === slideIndex ? "grid" : "none"};
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
