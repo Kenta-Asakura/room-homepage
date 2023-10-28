@@ -36,20 +36,27 @@ export default function Showcase() {
   const [items] = useState(data);
   const [slideIndex, setSlideIndex] = useState(1);
 
+  // console.log('Initial slideIndex state:', slideIndex);
+
   function previousSlide() {
     if (slideIndex !== 1) {
       setSlideIndex(slideIndex - 1);
     } else if (slideIndex === 1) {
       setSlideIndex(items.length);
+      // console.log('current state', slideIndex);
     }
+    console.log('current state', slideIndex);
   }
 
   function nextSlide() {
     if (slideIndex !== items.length) {
       setSlideIndex(slideIndex + 1);
+      // console.log('current state', slideIndex);
     } else if (slideIndex === items.length) {
       setSlideIndex(1);
+      // console.log('current state', slideIndex);
     }
+    console.log('current state', slideIndex);
   }
 
   return (

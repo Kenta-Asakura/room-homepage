@@ -5,8 +5,10 @@ export const SectionContainer = styled.section``;
 export const SlidesContainer = styled.div`
   position: relative;
 `;
+
 export const ArticleContainer = styled.article`
-  display: ${({ index, slideIndex }) => index === slideIndex ? "grid" : "none"};
+  // display : ${(props) => props.index === props.slideIndex ? 'grid' : 'none'};
+  display: ${({ index, slideIndex }) => slideIndex === index + 1  ? "grid" : "none"};
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
