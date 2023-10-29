@@ -3,6 +3,9 @@
   align-items: start;
   justify-content: flex-start;
   grid-template-columns: repeat(3, 1fr);
+  li {
+    
+  }
 }
 
 @media (max-width: ${({theme})}) {

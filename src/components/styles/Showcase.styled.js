@@ -7,7 +7,7 @@ export const SlidesContainer = styled.div`
 `;
 
 export const ArticleContainer = styled.article`
-  // display : ${(props) => props.index === props.slideIndex ? 'grid' : 'none'};
+  // display : ${(props) => props.slideIndex === props.index + 1 ? 'grid' : 'none'};
   display: ${({ index, slideIndex }) => slideIndex === index + 1  ? "grid" : "none"};
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
