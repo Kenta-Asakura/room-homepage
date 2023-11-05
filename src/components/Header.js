@@ -15,16 +15,18 @@ export default function Header() {
           <img src={logo} alt='' />
         </div>
 
-        <Nav>
-          {/* is li component necessary ? */}
-          {/* or just make nested li component ? */}
-          <ul>
-            <li><button>home</button></li>
-            <li><button>shop</button></li>
-            <li><button>about</button></li>
-            <li><button>contact</button></li>
-          </ul>
-        </Nav>
+        <div>
+          <Nav>
+            {/* is li component necessary ? */}
+            {/* or just make nested li component ? */}
+            <ul>
+              <li><button>home</button></li>
+              <li><button>shop</button></li>
+              <li><button>about</button></li>
+              <li><button>contact</button></li>
+            </ul>
+          </Nav>
+        </div>
 
         <HamburgerMenu>
           <button>

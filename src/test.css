@@ -3,9 +3,8 @@
   align-items: start;
   justify-content: flex-start;
   grid-template-columns: repeat(3, 1fr);
-  li {
-    
-  }
+  flex-wrap: wrap;
+  gap: 4;
 }
 
 @media (max-width: ${({theme})}) {

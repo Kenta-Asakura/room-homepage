@@ -6,6 +6,7 @@ import GlobalStyles from "./components/Global";
 import Header from "./components/Header";
 import Showcase from "./components/Showcase";
 import SectionTwo from "./components/SectionTwo";
+import { Container } from "./components/styles/Container.styled";
 
 const theme = {
   colors: {
