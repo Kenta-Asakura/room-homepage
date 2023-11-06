@@ -4,15 +4,11 @@ export const HeaderContainer = styled.header`
   width: 100%;
   position: absolute;
   z-index: 10;
-  // width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
-    & img {
-
-    }
 `;
 
 export const HamburgerMenu = styled.div`
@@ -41,7 +37,7 @@ export const Nav = styled.nav`
         button {
           color: black;
           background-color: transparent;
-          padding: 50px;
+          // padding: 50px;
           border: none;
         }
       }
