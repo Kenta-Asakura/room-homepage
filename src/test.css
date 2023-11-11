@@ -1,7 +1,7 @@
 .name {
   z-index: 10;
   align-items: start;
-  justify-content: flex-start;
+  border-bottom: ;
   grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   gap: 4;
