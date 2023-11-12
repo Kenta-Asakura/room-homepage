@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HamburgerMenu, HeaderContainer, Nav } from "./styles/Header.styled";
+import { HeaderContainer, HeaderLogo, HamburgerMenu, Nav } from "./styles/Header.styled";
 import logo from "../images/logo.svg"
 import menu from "../images/icon-hamburger.svg"
 
@@ -9,11 +9,10 @@ export default function Header() {
 
 
   return (
-    <>
       <HeaderContainer>
-        <div>
+        <HeaderLogo>
           <img src={logo} alt='' />
-        </div>
+        </HeaderLogo>
 
         <div>
           <Nav>
@@ -34,6 +33,5 @@ export default function Header() {
           </button>
         </HamburgerMenu>
       </HeaderContainer>
-    </>
   );
 }

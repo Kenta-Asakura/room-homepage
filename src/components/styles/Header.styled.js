@@ -8,13 +8,17 @@ export const HeaderContainer = styled.header`
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  padding: 32px;
+  padding: 32px 0;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     align-items: center;
     justify-content: center;
   }
 `;
+
+export const HeaderLogo = styled.div`
+  padding-left: 32px;
+`
 
 export const HamburgerMenu = styled.div`
   display: none;
@@ -29,30 +33,52 @@ export const HamburgerMenu = styled.div`
 `;
 
 export const Nav = styled.nav`
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  // padding: 32px 0;
 
     & ul {
       display:flex;
-      align-items: center;
-      justify-content: center;
       flex-wrap: wrap;
       overflow: hidden;
 
       & li {
         list-style: none;
 
-      & li:hover {
-        border-bottom:
-      }
-
         button {
           color: white;
+          font-weight: ${({ theme }) => theme.fonts.medium};
+          opacity: 80%;
           background-color: transparent;
-          // padding: 50px;
           border: none;
+          // position: relative;
+
+            &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            display: block;
+            // position: absolute;
+            left: 0px;
+            bottom: 0px;
+            opacity: 0;
+            transition: all 0.3s;
+            pointer-events: none;
+            }
+
+            &:hover::after {
+              opacity: 1;
+            }
+        }
+      }
+    }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      &ul {
+        button {
+          font-size: 20px;
         }
       }
     }
