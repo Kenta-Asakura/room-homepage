@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  padding: 32px 0;
+  padding: 20px 0;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     align-items: center;
@@ -17,7 +17,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const HeaderLogo = styled.div`
-  padding-left: 32px;
+  padding-left: 28px;
 `
 
 export const HamburgerMenu = styled.div`
@@ -42,6 +42,7 @@ export const Nav = styled.nav`
       display:flex;
       flex-wrap: wrap;
       overflow: hidden;
+      margin-left: -18px;
 
       & li {
         list-style: none;
@@ -52,7 +53,6 @@ export const Nav = styled.nav`
           opacity: 80%;
           background-color: transparent;
           border: none;
-          // position: relative;
 
             &::after {
             content: '';
@@ -60,7 +60,6 @@ export const Nav = styled.nav`
             height: 2px;
             background-color: white;
             display: block;
-            // position: absolute;
             left: 0px;
             bottom: 0px;
             opacity: 0;

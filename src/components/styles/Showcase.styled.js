@@ -66,7 +66,9 @@ export const Contents = styled.div`
 `;
 
 export const ContentsH1 = styled.h1`
-  font-size: 30px;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 500;
   color: ${({ theme }) => theme.colors["Slate"]};
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -75,7 +77,8 @@ export const ContentsH1 = styled.h1`
 `;
 
 export const ContentsP = styled.p`
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.4;
   opacity: 75%;
   margin: 24px 0;
   color: ${({ theme }) => theme.colors["Slate"]};
