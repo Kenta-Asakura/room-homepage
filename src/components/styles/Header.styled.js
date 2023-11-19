@@ -11,13 +11,17 @@ export const HeaderContainer = styled.header`
   padding: 20px 0;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    align-items: center;
     justify-content: center;
+    padding: 28px 0;
   }
 `;
 
 export const HeaderLogo = styled.div`
   padding-left: 28px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding-left: 0;
+  }
 `
 
 export const HamburgerMenu = styled.div`
@@ -26,9 +30,14 @@ export const HamburgerMenu = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     display: block;
     position: absolute;
-    top: 32px;
-    left: 32px;
+    top: 27px;
+    left: 22px;
     z-index: 20;
+
+    & button {
+      background: none;
+      border: none;
+    }
   }
 `;
 
@@ -75,7 +84,8 @@ export const Nav = styled.nav`
     }
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      &ul {
+      display: none;
+
         button {
           font-size: 20px;
         }
